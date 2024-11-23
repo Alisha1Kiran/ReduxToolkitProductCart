@@ -36,8 +36,11 @@ const Cart = () => {
 
   return (
     <>
-    <h1 className='text-center'>Cart</h1>
-      {Cards}
+    {
+      products.length <= 0  ? <h1 className='text-center'>No items added</h1> : <><h1 className='text-center'>Cart</h1>
+      {Cards} </>
+    }
+    
     </>
   )
 }
